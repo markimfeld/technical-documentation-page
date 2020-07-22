@@ -4,59 +4,68 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>FCC: Technical Documentation Page</title>
+        <!-- Custom Style -->
         <link rel="stylesheet" href="css/style.css" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <aside class="sidenav">
             <h2 class="text-center h2 font-weight-normal py-1">JS Documentation</h2>
             <nav id="navbar">
                 <ul class="navbar">
-                    <li class="nav-item"><a class="nav-link" href="#">Introduction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Introduction">Introduction</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"
+                        <a class="nav-link" href="#What_you_should_already_know"
                             >What you should already know</a
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Javascript and Java</a>
+                        <a class="nav-link" href="#Javascript_and_Java">Javascript and Java</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Hello world</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Variables</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Hello_world">Hello world</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Variables">Variables</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Declaring variables</a>
+                        <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Variable scope</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Global variables</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Constants</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Data types</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Global_variables">Global variables</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Constants">Constants</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Data_types">Data types</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">if...else statement</a>
+                        <a class="nav-link" href="#if...else_statement">if...else statement</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">while statement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#while_statement">while statement</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Function declarations</a>
+                        <a class="nav-link" href="#Function_declarations">Function declarations</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Reference</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Reference">Reference</a></li>
                 </ul>
             </nav>
         </aside>
-        <main id="main-doc">
+        <main id="main-doc" class="container">
             <section class="main-section" id="Introduction">
-                <h3>Introduction</h3>
-                <p>
+                <h3 class="h2 mb-4">Introduction</h3>
+                <p class="text-dark px-1 lh-2">
                     JavaScript is a cross-platform, object-oriented scripting
                     language. It is a small and lightweight language. Inside a
                     host environment (for example, a web browser), JavaScript
                     can be connected to the objects of its environment to
-                    provide programmatic control over them. JavaScript contains
+                    provide programmatic control over them. 
+                </p>
+                <br>
+                <p class="text-dark px-1 lh-2">    
+                    JavaScript contains
                     a standard library of objects, such as Array, Date, and
                     Math, and a core set of language elements such as operators,
                     control structures, and statements. Core JavaScript can be
                     extended for a variety of purposes by supplementing it with
                     additional objects; for example:
                 </p>
-                <ol>
-                    <li>
+                <br>
+                <ul class="inner-list pl-10">
+                    <li class="inner-list-item text-dark mb-3 lh-2">
                         Client-side JavaScript extends the core language by
                         supplying objects to control a browser and its Document
                         Object Model (DOM). For example, client-side extensions
@@ -64,7 +73,7 @@
                         and respond to user events such as mouse clicks, form
                         input, and page navigation.
                     </li>
-                    <li>
+                    <li class="inner-list-item text-dark lh-2">
                         Server-side JavaScript extends the core language by
                         supplying objects relevant to running JavaScript on a
                         server. For example, server-side extensions allow an
@@ -73,41 +82,45 @@
                         of the application, or perform file manipulations on a
                         server.
                     </li>
-                </ol>
+                </ul>
             </section>
 
             <section class="main-section" id="What_you_should_already_know">
-                <h3>What you should already know</h3>
-                <p>
+                <h3 class="h2 mb-4">What you should already know</h3>
+                <p class="text-dark px-1 mb-1 lh-2">
                     This guide assumes you have the following basic background:
                 </p>
-                <ol>
-                    <li>
+                <ul class="inner-list pl-10">
+                    <li class="inner-list-item text-dark mb-3 lh-2">
                         A general understanding of the Internet and the World
                         Wide Web (WWW).
                     </li>
-                    <li>
+                    <li class="inner-list-item text-dark mb-3 lh-2">
                         Good working knowledge of HyperText Markup Language
                         (HTML).
                     </li>
-                    <li>
+                    <li class="inner-list-item text-dark mb-3 lh-2">
                         Some programming experience. If you are new to
                         programming, try one of the tutorials linked on the main
                         page about JavaScript.
                     </li>
-                </ol>
+                </ul>
             </section>
 
             <section class="main-section" id="Javascript_and_Java">
-                <h3>Javascript and Java</h3>
-                <p>
+                <h3 class="h2 mb-4">Javascript and Java</h3>
+                <p class="text-dark px-1 mb-1 lh-2">
                     JavaScript and Java are similar in some ways but
                     fundamentally different in some others. The JavaScript
                     language resembles Java but does not have Java's static
                     typing and strong type checking. JavaScript follows most
                     Java expression syntax, naming conventions and basic
                     control-flow constructs which was the reason why it was
-                    renamed from LiveScript to JavaScript. In contrast to Java's
+                    renamed from LiveScript to JavaScript. 
+                </p>
+                <br>
+                <p class="text-dark px-1 mb-1 lh-2">
+                    In contrast to Java's
                     compile-time system of classes built by declarations,
                     JavaScript supports a runtime system based on a small number
                     of data types representing numeric, Boolean, and string
@@ -117,7 +130,11 @@
                     what is inherited can vary for individual objects.
                     JavaScript also supports functions without any special
                     declarative requirements. Functions can be properties of
-                    objects, executing as loosely typed methods. JavaScript is a
+                    objects, executing as loosely typed methods. 
+                </p>
+                <br>
+                <p class="text-dark px-1 mb-1 lh-2">
+                    JavaScript is a
                     very free-form language compared to Java. You do not have to
                     declare all variables, classes, and methods. You do not have
                     to be concerned with whether methods are public, private, or
@@ -128,18 +145,195 @@
             </section>
 
             <section class="main-section" id="Hello_world">
-                <h3>Hello world</h3>
-                <p>
+                <h3 class="h2 mb-4">Hello world</h3>
+                <p class="text-dark px-1 mb-1 lh-2">
                     To get started with writing JavaScript, open the Scratchpad
                     and write your first "Hello world" JavaScript code:
                 </p>
-                <code>
+                <br>
+                <span class="bg-light d-block p-3">
+                    <code class="text-dark px-1 mb-1 lh-3">
                     function greetMe(yourName) { alert("Hello " + yourName); }
                     greetMe("World");
-                </code>
-                <p>
+                    </code>
+                </span>
+                <br><br>
+                <p class="text-dark px-1 mb-1 lh-2">
                     Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! 
                 </p>
+            </section>
+
+            <section class="main-section" id="Variables">
+                <h3 class="h2 mb-4">Variables</h3>
+                <p class="text-dark px-1 mb-1 lh-2">
+                    You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules. 
+                </p>
+                <br>
+                <p class="text-dark px-1 mb-1 lh-2">
+                    A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+                </p>
+                <br>
+                <p class="text-dark px-1 mb-1 lh-2">
+                    You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name. 
+                </p>
+            </section>
+
+            <section class="main-section" id="Declaring_variables">
+                <h3 class="h2 mb-4">Declaring variables</h3>
+                <p class="text-dark px-1 mb-1 lh-2">
+                    You can declare a variable in three ways:
+                </p>
+                
+                <p class="text-dark px-1 mb-1 lh-2">
+                    With the keyword var. For example,
+                </p>
+
+                <span class="bg-light d-block p-3 mb-1">
+                    <code class="text-dark px-1 mb-1 lh-3">
+                        var x = 42.
+                    </code>
+                </span>
+
+                <p class="text-dark px-1 mb-1 lh-2">
+                    This syntax can be used to declare both local and global variables.
+                </p>
+                <br> 
+                <p class="text-dark px-1 mb-1 lh-2">
+                    By simply assigning it a value. For example,
+                </p>
+                
+                <span class="bg-light d-block p-3 mb-1">
+                    <code class="text-dark px-1 mb-1 lh-3">
+                        x = 42.
+                    </code>
+                </span>
+
+                <p class="text-dark px-1 mb-1 lh-2">
+                    This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+                </p>
+                <br> 
+                <p class="text-dark px-1 mb-1 lh-2">
+                    With the keyword let. For example,
+                </p>
+                
+                <span class="bg-light d-block p-3 mb-1">
+                    <code class="text-dark px-1 mb-1 lh-3">
+                        let y = 13.
+                    </code>
+                </span>
+
+                <p class="text-dark px-1 mb-1 lh-2">
+                    This syntax can be used to declare a block scope local variable. See Variable scope below. 
+                </p>
+            </section>
+
+            <section class="main-section" id="Variable_scope">
+                <h3 class="h2 mb-4">Variable scope</h3>
+                <p class="text-dark px-1 mb-1 lh-2">
+                    When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+                </p>
+                
+                <p class="text-dark px-1 mb-1 lh-2">
+                    JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement. 
+                </p>
+
+                <span class="bg-light d-block p-3 mb-1">
+                    <code class="text-dark px-1 mb-1 lh-3">
+                        if (true) { var x = 5; } console.log(x); // 5
+                    </code>
+                </span>
+
+                <p class="text-dark px-1 mb-1 lh-2">
+                    This behavior changes, when using the let declaration introduced in ECMAScript 2015. 
+                </p>
+                <br> 
+                <span class="bg-light d-block p-3 mb-1"> <code class="text-dark px-1 mb-1 lh-3">
+                        if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+                         defined
+                    </code>
+                </span>
+            </section>
+
+            <section class="main-section" id="Global_variables">
+                <h3 class="h2 mb-4">Global variables</h3>
+                <p class="text-dark px-1 mb-1 lh-2">
+                    Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.
+                </p>
+                
+                <p class="text-dark px-1 mb-1 lh-2">
+                    Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber. 
+                </p>
+            </section>
+
+            <section class="main-section" id="Constants">
+                <h3 class="h2 mb-4">Constants</h3>
+                <p class="text-dark px-1 mb-1 lh-2">
+                    You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
+                </p>
+
+                <span class="bg-light d-block p-3 mb-1">
+                    <code class="text-dark px-1 mb-1 lh-3">
+                         const PI = 3.14;
+                    </code>
+                </span>
+
+                <p class="text-dark px-1 mb-1 lh-2">
+                    A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
+                </p>
+                <br> 
+                <p class="text-dark px-1 mb-1 lh-2">
+                    The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable. 
+                </p>
+                
+                <p class="text-dark px-1 mb-1 lh-2">
+                    You cannot declare a constant with the same name as a function or variable in the same scope. For example: 
+                </p>
+
+                <span class="bg-light d-block p-3 mb-1">
+                    <code class="text-dark px-1 mb-1 lh-3">
+                        // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
+                         CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
+                        }
+                    </code>
+                </span>
+
+                <p class="text-dark px-1 mb-1 lh-2">
+                    However, object attributes are not protected, so the following statement is executed without problems.
+                </p>
+                <br> 
+                <p class="text-dark px-1 mb-1 lh-2">
+                    With the keyword let. For example,
+                </p>
+                
+                <span class="bg-light d-block p-3 mb-1">
+                    <code class="text-dark px-1 mb-1 lh-3">
+                        const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
+                    </code>
+                </span>
+            </section>
+
+            <section class="main-section" id="Data types">
+                <h3 class="h2 mb-4">Data types</h3>
+                <p class="text-dark px-1 mb-1 lh-2">
+                    The latest ECMAScript standard defines seven data types:
+                </p>
+
+                <ul class="inner-list pl-10">
+                    <li class="inner-list-item text-dark mb-3 lh-2">
+                        Six data types that are primitives:
+                    </li>
+                    <ul>
+                        <li class="inner-list-item text-dark lh-2">
+                            Server-side JavaScript extends the core language by
+                            supplying objects relevant to running JavaScript on a
+                            server. For example, server-side extensions allow an
+                            application to communicate with a database, provide
+                            continuity of information from one invocation to another
+                            of the application, or perform file manipulations on a
+                            server.
+                        </li>
+                    </ul>
+                </ul>
             </section>
         </main>
     </body>

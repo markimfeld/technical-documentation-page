@@ -1,5 +1,9 @@
 :root {
-    --text-muted: #6c757d;
+    --dark: #343a40;
+    --gray: #6c757d;
+    --light-gray: #cccccc;
+    --muted: #6c757d;
+    --light: #F7F7F7;
 }
 /*
     General settings
@@ -7,7 +11,44 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: helvetica; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+/*
+    Text Colors
+*/
+.text-muted {
+    color: var(--muted);
+}
+
+.text-light-gray {
+    color: var(--light-gray);
+}
+
+.text-gray {
+    color: var(--gray);
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+/*
+    Background Colors
+*/
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.bg-light {
+    background-color: var(--light);
+}
+
+/*
+    Displays
+*/
+.d-block {
+    display: block;
 }
 
 a {
@@ -46,6 +87,26 @@ a {
     font-size: .67em;
 }
 
+.p-1 {
+    padding: .67em;
+}
+
+.p-2 {
+    padding: .87em;
+}
+
+.p-3 {
+    padding: 1em;
+}
+
+.p-4 {
+    padding: 1.17em;
+}
+
+.p-5 {
+    padding: 1.5em;
+}
+
 .py-1 {
     padding: .67em 0;
 }
@@ -66,6 +127,91 @@ a {
     padding: 1.5em 0;
 }
 
+.px-1 {
+    padding: 0 .67em;
+}
+
+.px-2 {
+    padding: 0 .87em;
+}
+
+.px-3 {
+    padding: 0 1em;
+}
+
+.px-4 {
+    padding: 0 1.17em;
+}
+
+.px-5 {
+    padding: 0 1.5em;
+}
+
+.pl-1 {
+    padding-left: .67em;
+}
+
+.pl-2 {
+    padding-left: .87em;
+}
+
+.pl-3 {
+    padding-left: 1em;
+}
+
+.pl-4 {
+    padding-left: 1.17em;
+}
+.pl-5 {
+    padding-left: 1.5em;
+}
+
+.pl-10 {
+    padding-left: 4em;
+}
+
+.mb-1 {
+    margin-bottom: .67em;
+}
+
+.mb-2 {
+    margin-bottom: .87em;
+}
+
+.mb-3 {
+    margin-bottom: 1em;
+}
+
+.mb-4 {
+    margin-bottom: 1.17em;
+}
+
+.mb-5 {
+    margin-bottom: 1.5em;
+}
+
+.lh-1 {
+    line-height: 1.3em;
+}
+
+.lh-2 {
+    line-height: 1.5em;
+}
+
+
+.lh-3 {
+    line-height: 1.8em;
+}
+
+.container {
+    margin: 2em 2.5em;
+}
+
+
+code {
+    font-family: 'Fira Code', monospace;
+    font-size: .9em;
+}
 
 /* 
     Nav Bar
@@ -87,4 +233,8 @@ a {
 
 .nav-link {
     color: black;
+}
+
+.main-section {
+    margin-bottom: 2em;
 }
