@@ -1,0 +1,90 @@
+:root {
+    --text-muted: #6c757d;
+}
+/*
+    General settings
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-weight-normal {
+    font-weight: 400;
+}
+
+.h1 {
+    font-size: 2em;
+}
+
+.h2 {
+    font-size: 1.5em;
+}
+
+.h3 {
+    font-size: 1.17em;
+}
+
+.h4 {
+    font-size: 1em;
+}
+
+.h5 {
+    font-size: .83em;
+}
+
+.h6 {
+    font-size: .67em;
+}
+
+.py-1 {
+    padding: .67em 0;
+}
+
+.py-2 {
+    padding: .87em 0;
+}
+
+.py-3 {
+    padding: 1em 0;
+}
+
+.py-4 {
+    padding: 1.17em 0;
+}
+
+.py-5 {
+    padding: 1.5em 0;
+}
+
+
+/* 
+    Nav Bar
+*/
+.navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    overflow-y: auto;
+    height: 200px;
+}
+
+.nav-item {
+    padding: .67em 0 .67em 1.8em;
+    margin: 0 0 .1em 0;
+    border-bottom: 1px solid black;
+}
+
+.nav-link {
+    color: black;
+}
