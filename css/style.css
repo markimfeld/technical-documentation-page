@@ -274,7 +274,7 @@ code {
         position: fixed;
     }
     
-    .sidenav > h2 {
+    .sidenav header > h2 {
         border-right: 3px solid rgba(0, 22, 22, 0.4);
     }
 
