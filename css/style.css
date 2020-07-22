@@ -238,3 +238,49 @@ code {
 .main-section {
     margin-bottom: 2em;
 }
+
+
+@media only screen and (min-width: 768px) {
+    body {
+        display: flex;
+    }
+
+    .navbar {
+        border: 3px solid rgba(0, 22, 22, 0.4);
+        border-top: 1px solid black;
+        height: 100vh;
+    }
+    
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+
+    .nav-item:hover {
+        background-color: rgba(0, 22, 22, 0.1);
+        transition: all 350ms ease;
+    }
+
+    .nav-item:hover > a {
+        color: var(--dark);
+    }
+
+    .nav-link {
+        color: var(--gray);
+    }
+
+    .sidenav {
+        width: 300px;
+        background-color: white;
+        position: fixed;
+    }
+    
+    .sidenav > h2 {
+        border-right: 3px solid rgba(0, 22, 22, 0.4);
+    }
+
+    .container {
+        padding-left: 330px;
+        margin: 2em 1em;
+        width: 70%;
+    }
+}
